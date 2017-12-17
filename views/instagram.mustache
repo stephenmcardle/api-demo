@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+{{>head}}
+
+<body class="container" style="background:#f9f9f9">
+	<h1>Instagram Page</h1>
+	<hr />
+
+	<div class="row">
+
+		{{#feed}}
+		<div class="col-md-3">
+			<div style="padding:12px">
+				<img style="background:#fff;width:260px;padding:12px;border:1px solid #ddd" src="{{image}}" /><br />
+				<small>{{caption}}</small>
+			</div>
+
+		</div>
+
+
+		{{/feed}}
+
+
+	</div>
+
+
+  <!-- Turbo library imports: jQuery, Turbo CDN, sample app.js.
+  NOTE: These should be minified in a build script -->
+  <script type="text/javascript" src="/js/jquery.js"></script>
+
+  <!-- For file uploading. Remove if file upload not necessry -->
+  <script type="text/javascript" src="/js/dropzone.js"></script> 
+
+  <!-- Turbo CDN. Better to use CDN than to store locally. -->
+  <script type="text/javascript" src="https://cdn.turbo360-dev.com/dist/turbo.min.js"></script>
+
+  <!-- Your app specific code -->
+  <script type="text/javascript" src="/js/app.js"></script>
+</body>
+</html>

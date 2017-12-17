@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+{{>head}}
+
+<body class="container" style="background:#fff">
+	<h1>Foursquare Page</h1>
+	<hr />
+
+	<div class="row">
+		<div class="col-md-8">
+			<table class="table table-striped" style="background:#f9f9f9;border:1px solid #ddd;padding:16px">
+				<thead>
+					<tr>
+						<td><strong>Name</strong></td>
+						<td><strong>Phone</strong></td>
+						<td><strong>Website</strong></td>
+					</tr>
+				</thead>
+				<tbody>
+					{{#results}}
+					<tr>
+						<td>{{name}}</td>
+						<td>{{contact.formattedPhone}}</td>
+						<td><a style="color:red" target="_blank" href="{{url}}">{{url}}</a></td>
+					</tr>
+					{{/results}}
+				</tbody>
+
+			</table>
+
+	</div>
+
+
+  <!-- Turbo library imports: jQuery, Turbo CDN, sample app.js.
+  NOTE: These should be minified in a build script -->
+  <script type="text/javascript" src="/js/jquery.js"></script>
+
+  <!-- For file uploading. Remove if file upload not necessry -->
+  <script type="text/javascript" src="/js/dropzone.js"></script> 
+
+  <!-- Turbo CDN. Better to use CDN than to store locally. -->
+  <script type="text/javascript" src="https://cdn.turbo360-dev.com/dist/turbo.min.js"></script>
+
+  <!-- Your app specific code -->
+  <script type="text/javascript" src="/js/app.js"></script>
+</body>
+</html>

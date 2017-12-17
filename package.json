@@ -1,0 +1,25 @@
+{
+  "name": "api-demo",
+  "version": "0.0.0",
+  "server": false,
+  "private": true,
+  "scripts": {
+    "test": "",
+    "build": ""
+  },
+  "dependencies": {
+    "nodemon": "latest",
+    "superagent": "^3.8.2",
+    "turbo360": "latest",
+    "vertex360": "latest"
+  },
+  "devDependencies": {
+    "express": "latest",
+    "rimraf": "latest"
+  },
+  "app": "5a35769b79068e0014ce3d0e",
+  "deploy": [
+    "."
+  ],
+  "format": "vertex"
+}
